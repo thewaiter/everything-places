@@ -1,2 +1,2 @@
 # everything-places
-Everything place module (Moksha port)
+Everything places module (Moksha port)
