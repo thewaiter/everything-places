@@ -1,0 +1,40 @@
+# Portuguese translation for everything-places
+# This file is distributed under the same license as the enlightenment package.
+# Sérgio Marques <smarquespt@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: Everything-places\n"
+"Report-Msgid-Bugs-To: http://trac.enlightenment.org/e\n"
+"POT-Creation-Date: 2011-01-29 21:41-0800\n"
+"PO-Revision-Date: 2011-02-06 19:51-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: Portugal\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../src/e_mod_main.c:135
+msgid "Home"
+msgstr "Pasta pessoal"
+
+#: ../src/e_mod_main.c:138
+msgid "Wallpaper"
+msgstr "Papel de parede"
+
+#: ../src/e_mod_main.c:269
+#: ../src/e_mod_main.c:280
+msgid "Places"
+msgstr "Locais"
+
+#: ../src/e_mod_main.c:291
+msgid "Mount Drive"
+msgstr "Montar unidade"
+
+#: ../src/e_mod_main.c:296
+msgid "Unmount Drive"
+msgstr "Desmontar unidade"
+
