@@ -70,8 +70,14 @@ _gtk_bookmarks_add(Plugin *p)
    char *alias;
    FILE* fp;
 
-   snprintf(buf, sizeof(buf), "%s/.gtk-bookmarks", e_user_homedir_get());
+   snprintf(buf, sizeof(buf), "%s/gtk-3.0/bookmarks", efreet_config_home_get());
    fp = fopen(buf, "r");
+   if (!fp)
+     {
+        snprintf(buf, sizeof(buf), "%s/.gtk-bookmarks", e_user_homedir_get());
+        fp = fopen(buf, "r");
+     }
+
    if (!fp) return;
 
    while(fgets(line, sizeof(line), fp))
