@@ -21,7 +21,7 @@ struct _Plugin
 static const Evry_API *evry = NULL;
 static Evry_Module *evry_module = NULL;
 static Eina_List *_plugins = NULL;
-static const char _module_icon[] = "find";
+//~ static const char _module_icon[] = "find";
 static const char *_mime_dir;
 static const char *_mime_mount;
 static Evry_Action *act_mount;
@@ -134,7 +134,7 @@ _volume_list_add(Plugin *p)
 }
 
 static Evry_Plugin *
-_begin(Evry_Plugin *plugin, const Evry_Item *item)
+_begin(Evry_Plugin *plugin, const Evry_Item *item __UNUSED__)
 {
    Plugin *p;
    char path[PATH_MAX];
@@ -347,14 +347,14 @@ e_modapi_init(E_Module *m)
 }
 
 EAPI int
-e_modapi_shutdown(E_Module *m)
+e_modapi_shutdown(E_Module *m __UNUSED__)
 {
    EVRY_MODULE_FREE(evry_module);
    return 1;
 }
 
 EAPI int
-e_modapi_save(E_Module *m)
+e_modapi_save(E_Module *m __UNUSED__)
 {
    return 1;
 }
